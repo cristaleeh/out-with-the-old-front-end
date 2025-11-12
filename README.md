@@ -1,6 +1,16 @@
-# Out With the Old! 
+# Out With the Old #
+![Landing Page](./public/landing.png)
+![Sign up Page](./public/signup.png)
+![Sing In Page](./public/signIn.png)
+![All products Page](./public/allproducts.png)
+![My Products](./public/myproducts.png)
+![Edit Page](./public/edit.png)
+![Add Page](./public/addproduct.png)
+
 
 Out With the Old! is a **makeup and skincare product tracker** that helps users keep track of their beauty products, monitor expiry dates, and stay organized. Inspired by a fun **Bratz-style aesthetic**, this app combines utility with playful retro design.
+
+---
 
 ## Features
 
@@ -12,7 +22,13 @@ Out With the Old! is a **makeup and skincare product tracker** that helps users 
 - **Comments**: Users can leave comments on products.
 - **Bratz-inspired UI**: Fun, retro computer font, bright gradients, and playful styling.
 
+
+---- 
+
 ## Demo
+
+
+---
 
 
 
@@ -24,14 +40,15 @@ Out With the Old! is a **makeup and skincare product tracker** that helps users 
 - **Authentication**: JWT (JSON Web Tokens)
 - **Styling**: Bratz-inspired theme using gradients, retro fonts, and CSS Modules
 
-
+---
+ 
 out-with-the-old/
-├── client/                       # React frontend
+├── client/                       
 │   ├── public/
 │   │   ├── index.html
 │   │   └── favicon.ico
 │   └── src/
-│       ├── assets/               # Images, fonts, icons
+│       ├── assets/               
 │       ├── components/
 │       │   ├── NavBar/
 │       │   │   ├── NavBar.jsx
@@ -68,7 +85,7 @@ out-with-the-old/
 │       ├── App.jsx
 │       ├── index.jsx
 │       └── index.css
-├── server/                       # Backend
+├── server/                      
 │   ├── controllers/
 │   │   ├── auth.js
 │   │   ├── category.js
@@ -88,3 +105,10 @@ out-with-the-old/
 └── package.json                  
 
 
+---
+## Future goals
+
+- Implement search functionality 
+- Improve UI/UX design with better styling and animations
+- Upload pictures of each product
+- Allow user to save products on their dashboard
