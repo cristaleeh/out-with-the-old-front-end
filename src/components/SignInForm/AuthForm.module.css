@@ -1,0 +1,113 @@
+.container {
+  background: radial-gradient(circle at center, #1a0017 0%, #000 100%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ff66c4;
+  text-align: center;
+  font-family: 'VT323', monospace;
+  position: relative;
+  overflow: hidden;
+}
+
+/* scanline effect */
+.container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.03) 0px,
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 2px,
+    transparent 4px
+  );
+  pointer-events: none;
+}
+
+.formBox {
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #ff66c4;
+  border-radius: 12px;
+  padding: 2rem 3rem;
+  width: 300px;
+  box-shadow: 0 0 20px #ff66c4, 0 0 40px #ff99dd;
+  animation: fadeIn 1.5s ease;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ffb3e6;
+  text-shadow: 0 0 10px #ff66c4;
+  letter-spacing: 2px;
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.8rem 0;
+  background: transparent;
+  border: 2px solid #ff80c1;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'VT323', monospace;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input:focus {
+  border-color: #ff66c4;
+  box-shadow: 0 0 10px #ff66c4;
+}
+
+.button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background: #ff66c4;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.3rem;
+  font-family: 'VT323', monospace;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff66c4;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #ffb3e6;
+  color: #000;
+  box-shadow: 0 0 20px #ff80c1;
+}
+
+.link {
+  margin-top: 1rem;
+  display: block;
+  color: #ffb3e6;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.link:hover {
+  text-shadow: 0 0 10px #ff66c4;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

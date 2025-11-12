@@ -1,0 +1,47 @@
+/* ProductList.module.css */
+
+.card {
+  background: linear-gradient(135deg, #ff69b4, #ffb6c1);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-family: 'Courier New', Courier, monospace; /* retro computer font */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.cancelButton {
+  background-color: #800080;
+  color: #fff;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  margin-right: 0.5rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+form {
+  margin-top: 0.5rem;
+}

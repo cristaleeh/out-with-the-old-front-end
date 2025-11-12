@@ -32,8 +32,9 @@ export default defineConfig([
         'warn',
         { allowConstantExport: true },
       ],
-      'react/prop-types': 'off', 
-      'react/no-unescaped-entities': 'off', 
+      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      'react/prop-types': 'off', // add this line
+      'react/no-unescaped-entities': 'off', // add this line 
     },
   },
-])
+]);
