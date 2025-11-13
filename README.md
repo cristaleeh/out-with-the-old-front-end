@@ -1,12 +1,13 @@
 # Out With the Old #
-![Landing Page](./public/landing.png)
-![Sign up Page](./public/signup.png)
-![Sing In Page](./public/signIn.png)
-![All products Page](./public/allproducts.png)
-![My Products](./public/myproducts.png)
-![Edit Page](./public/edit.png)
-![Add Page](./public/addproduct.png)
+![Landing Page](./images/landing.png)
+![Sign up Page](/images/signup.png)
+![Sing In Page](./images/signIn.png)
+![All products Page](./images/allproducts.png)
+![My Products](./images/myproducts.png)
+![Edit Page](./images/edit.png)
+![Add Page](./images/addproduct.png)
 
+--- 
 
 Out With the Old! is a **makeup and skincare product tracker** that helps users keep track of their beauty products, monitor expiry dates, and stay organized. Inspired by a fun **Bratz-style aesthetic**, this app combines utility with playful retro design.
 
@@ -95,14 +96,23 @@ out-with-the-old/
 │   ├── middleware/
 │   │   └── verify-token.js
 │   ├── models/
-│       ├── category.js
-│       ├── product.js
-│       └── user.js
+│   │   ├── category.js
+│   │   ├── product.js
+│   │   └── user.js
 │   ├── server.js
 │   ├── package.json
 │   └── .gitignore
+├── images/                      
+│   ├── landing.png
+│   ├── signup.png
+│   ├── signIn.png
+│   ├── allproducts.png
+│   ├── myproducts.png
+│   ├── edit.png
+│   └── addproduct.png
 ├── README.md
-└── package.json                  
+└── package.json
+                 
 
 
 ---
