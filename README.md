@@ -43,6 +43,9 @@ Out With the Old! is a **makeup and skincare product tracker** that helps users 
 
 ---
  
+
+
+```
 out-with-the-old/
 ├── client/                       
 │   ├── public/
@@ -112,7 +115,7 @@ out-with-the-old/
 │   └── addproduct.png
 ├── README.md
 └── package.json
-                 
+```            
 
 
 ---
@@ -122,3 +125,6 @@ out-with-the-old/
 - Improve UI/UX design with better styling and animations
 - Upload pictures of each product
 - Allow user to save products on their dashboard
+
+---
+y
