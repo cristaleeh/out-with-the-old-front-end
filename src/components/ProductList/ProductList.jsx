@@ -9,12 +9,12 @@ const ProductList = ({ products, handleDeleteProduct }) => {
   const { user } = useContext(UserContext);
   const [commentInputs, setCommentInputs] = useState({});
   const navigate = useNavigate();
-  // Handle input change for comment fields
+
   const handleInputChange = (productId, value) => {
     setCommentInputs((prev) => ({ ...prev, [productId]: value }));
   };
 
-  // Submit comment for a product
+  
   const handleCommentSubmit = async (e, productId) => {
     e.preventDefault();
     const content = commentInputs[productId]?.trim();
@@ -22,11 +22,11 @@ const ProductList = ({ products, handleDeleteProduct }) => {
 
     try {
       const updatedProduct = await addComment(productId, { text: content });
-      // Update the product in the state
+      
       const updatedProducts = products.map((p) =>
         p._id.toString() === updatedProduct._id.toString() ? updatedProduct : p
       );
-      // Update local state
+      
       setCommentInputs((prev) => ({ ...prev, [productId]: '' }));
     } catch (err) {
       console.error('Failed to add comment:', err);
@@ -80,7 +80,7 @@ const ProductList = ({ products, handleDeleteProduct }) => {
               </div>
             )}
 
-            {/* Comments section */}
+            
             <div>
               <h4>Comments:</h4>
               {product.comments && product.comments.length > 0 ? (
